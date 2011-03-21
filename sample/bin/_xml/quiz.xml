@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+  <introduction><![CDATA[Introdução do quiz]]></introduction>
+  <link>
+    <text><![CDATA[Saiba mais aqui!]]></text>
+    <path><![CDATA[http://www.marie.art.br]]></path>
+  </link>
+  <messages>
+    <message><![CDATA[Mensagem de 0% de acertos]]></message>
+    <message><![CDATA[Mensagem de 0% até 29% de acertos]]></message>
+    <message><![CDATA[Mensagem de 30% até 69% de acertos]]></message>
+    <message><![CDATA[Mensagem com mais de 70% de acertos]]></message>
+  </messages>
+  <questions>
+    <question id="1">
+      <text><![CDATA[Questão 1]]></text>
+      <answers>
+        <answer id="1">
+          <text><![CDATA[Alternativa 1]]></text>
+          <correct>false</correct>
+        </answer>
+        <answer id="2">
+          <text><![CDATA[Alternativa 2]]></text>
+          <correct>false</correct>
+        </answer>
+        <answer id="3">
+          <text><![CDATA[Alternativa 3]]></text>
+          <correct>true</correct>
+        </answer>
+        <answer id="4">
+          <text><![CDATA[Alternativa 4]]></text>
+          <correct>false</correct>
+        </answer>
+      </answers>
+    </question>
+    <question id="2">
+      <text><![CDATA[Questão 2]]></text>
+      <answers>
+        <answer id="1">
+          <text><![CDATA[Alternativa 1]]></text>
+          <correct>false</correct>
+        </answer>
+        <answer id="2">
+          <text><![CDATA[Alternativa 2]]></text>
+          <correct>true</correct>
+        </answer>
+        <answer id="3">
+          <text><![CDATA[Alternativa 3]]></text>
+          <correct>false</correct>
+        </answer>
+        <answer id="4">
+          <text><![CDATA[Alternativa 4]]></text>
+          <correct>false</correct>
+        </answer>
+      </answers>
+    </question>
+  </questions>
+</quiz>

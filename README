@@ -1,0 +1,29 @@
+Usage
+-----
+You can use the static methods on DynamicXMLParser to dynamic parse a list or a node on xml.
+
+	private function loadXML():void
+		{
+			var _loader:URLLoader = new URLLoader(new URLRequest("_xml/quiz.xml"));
+			_loader.addEventListener(Event.COMPLETE, handleLoadComplete);
+		}
+		
+		private function handleLoadComplete(e:Event):void
+		{
+			var quizXML:XML = XML(URLLoader(e.target).data);
+			
+			var quizData:QuizData = QuizData(DynamicXMLParser.parseNode(quizXML, QuizData));
+		}
+
+How-to
+-----------
+Build your data classes where public variables or setters will have the same names of xml's tags.
+
+
+Restrictions
+-----------
+* For parse a list you should have a Vector instance or a class with a required parameter with Vector type.
+
+* The only required parameters you can have is Vectors.
+
+* All the class variables must be public or have setters.
